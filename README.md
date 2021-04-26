@@ -3,7 +3,7 @@ A poc validating jenkins monitoring based on statistics-gatherer plugin (https:/
 
 
 # Summary of set up
-+ Install Dcoker
++ Install Docker
 + Activate Jenkins
 + Install statistics-gatherer plugin
 + Congigure logstash http endpoints in statistics-gatherer plugin
