@@ -1,0 +1,28 @@
+---
+# user pipelines
+#- pipeline.id: user-insert-pipeline
+#  path.config: "/usr/share/logstash/pipeline/user_insert.conf"
+#  pipeline.workers: 1
+#
+#- pipeline.id: user-update-pipeline
+#  path.config: "/usr/share/logstash/pipeline/user_update.conf"
+#  pipeline.workers: 1
+- pipeline.id: builds-pipeline
+  path.config: "/usr/share/logstash/pipeline/builds-pipeline.conf"
+  pipeline.workers: 1
+
+- pipeline.id: queues-pipeline
+  path.config: "/usr/share/logstash/pipeline/queues-pipeline.conf"
+  pipeline.workers: 1
+
+- pipeline.id: projects-pipeline
+  path.config: "/usr/share/logstash/pipeline/projects-pipeline.conf"
+  pipeline.workers: 1
+
+- pipeline.id: build-steps-pipeline
+  path.config: "/usr/share/logstash/pipeline/build-steps-pipeline.conf"
+  pipeline.workers: 1
+
+- pipeline.id: scm-checkouts-pipeline
+  path.config: "/usr/share/logstash/pipeline/scm-checkouts-pipeline.conf"
+  pipeline.workers: 1
